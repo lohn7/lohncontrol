@@ -1,6 +1,7 @@
 # lohncontrol
 The processing economy without trust problems
 
+
           The platform will be a dynamic, complex ecosystem that will integrate all parties involved into a lohn contract and their relationships will be managed independently in the blockchain through the lohncontrol Smart Contract that will release the payments due to each one to fulfill the tasks initially allocated.
           The main actors of this ecosystem will be buyers from developed economies who want to produce quality and cheap goods and manufacturers from developing economies interested in these orders. The relationship between them will be possible with the participation of some directly involved actors such as transport companies, connected logistics, warehouses, then quality control experts who are engaged in industrial production processes and finally the providers of payment solutions within the smart the contract, which closes the economic circuit.
            Equally important in the performance of the lohn contract but with indirect involvement in the smart contract are the secondary actors in the second series, namely raw material suppliers, internal suppliers, utilities suppliers and then framework providers for software infrastructure, financial risk management, data providers, financial risk insurance, legal services.
@@ -42,4 +43,3 @@ ATL=100%
 then
 MkLV = ARV/ATxATL=100M/1Bx100%liquidity
 MkLV=0,10USD
-
