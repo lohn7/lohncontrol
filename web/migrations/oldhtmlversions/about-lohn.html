@@ -1,0 +1,1043 @@
+﻿<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="msapplication-tap-highlight" content="no"/> 
+    <title>About Lohn and LOHN token price calculation algorithm</title> 
+    <meta name="description" content="Lohncontrol platform is a dynamic and complex ecosystem that will integrate all parties involved into a lohn contract"> 
+    <meta name="keywords" content="lohncontrol, smartcontract lohn, lohn blockchain platform, lohn industry smartcontract" /> 
+    <meta name="robots" content="NOODP,NOYDIR" /> 
+    <meta name="author" content="LOHN Co.">  
+     
+    <meta name="language" content="en" /> 
+    <meta name="coverage" content="worldwide, english" /> 
+    <meta property="og:type" content="website" /> 
+    <meta property="og:site_name" content="Lohn Control : Lohn industry blockchain platform" /> 
+    <meta property="og:title" content="The processing economy without trust problems" /> 
+    <meta property="og:url" content="https://lohncontrol.com" /> 
+    <meta property="og:description" content="Lohncontrol platform is a dynamic and complex ecosystem that will integrate all parties involved into a lohn contract" /> 
+    <meta property="og:image" content="https://lohncontrol.com/resources/lohncontrol.jpg" /> 
+    <meta property="og:locale" content="en_EN" /> 
+    <meta name="twitter:card" content="summary" /> 
+    <meta name="twitter:site" content="@LOHN09047729" /> 
+    <meta name="twitter:title" content="Lohncontrol" />     
+    <meta name="twitter:description" content="Lohncontrol platform is a dynamic and complex ecosystem that will integrate all parties involved into a lohn contract" /> 
+     
+    <link rel="icon" href="images/icon.png">  
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="css/icomoon.min.css" /> 
+    <link rel="stylesheet" href="css/swiper.min.css" />  
+    <link rel="stylesheet" href="css/animate.css" />   
+    <link rel="stylesheet" href="css/somesvg.css" /> 
+    <link rel="stylesheet" href="css/google-fonts.css" />  
+    <link rel="stylesheet" href="css/timeline.css" />  
+    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" media="screen" href="css/style-particle.css" />   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" /> 
+     
+     
+     
+    <!--[if lt IE 9]> 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> 
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
+    <![endif]-->     
+<!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972403-1"></script> 
+<script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'UA-118972403-1'); 
+</script> 
+<body> 
+<!-- particles container --> 
+<div id="particles-js">     
+    	<div class="container">  
+       			<div class="static-bnn">          
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">   
+                        <div class="bnn-caption">                        
+<div id="inf" class="displaynone"><img class="imgg" src="images/lohn-write.png" alt="lohn control" /></div> 
+<div class="lohn-parent" id="outf">   
+<svg class="lohn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 440 130"> 
+   <g id="L-two-letter"> 
+    <line class="L-two-long-stroke" x1="17" y1="0" x2="17" y2="124" stroke="#fff" fill="none" stroke-width="34" /> 
+    <line class="L-two-short-stroke" x1="34" y1="107" x2="74" y2="107" stroke="#fff" fill="none" stroke-width="34" /> 
+  </g>   
+  <g id="O-letter"> 
+    <circle class="O-stroke" cx="145" cy="64" r="48" stroke="#fff" fill="none" stroke-width="31" /> 
+  </g> 
+  <g id="hello_o"> 
+		<circle class="line" cx="283.51" cy="262.69" r="60.68"/> 
+  </g> 
+  <g id="H-letter"> 
+      <line class="H-left-stroke" x1="235" y1="0" x2="235" y2="124" stroke="#fff" fill="none" stroke-width="34" /> 
+      <line class="H-mid-stroke" x1="252" y1="62" x2="289" y2="62" stroke="#fff" fill="none" stroke-width="34" /> 
+      <line class="H-right-stroke" x1="305" y1="0" x2="305" y2="124" stroke="#fff" fill="none" stroke-width="34" /> 
+  </g>  
+  <g id="N-letter"> 
+      <line class="N-left-stroke" x1="350" y1="0" x2="350" y2="124" stroke="#fff" fill="none" stroke-width="34" /> 
+      <line class="L-two-long-stroke" x1="350" y1="5" x2="415" y2="110" stroke="#fff" fill="none" stroke-width="34" /> 
+      <line class="N-right-stroke" x1="416" y1="0" x2="416" y2="124" stroke="#fff" fill="none" stroke-width="34" /> 
+  </g>  
+</svg> 
+</div> 
+<h2 class="move wow fadeInLeft" data-wow-duration="3s" data-wow-delay="2s">Be our partner, feel the value!</h2> 
+                            <p style="text-align:center; margin-top:0px; padding-top:4px;">The processing economy without trust problems.</p> 
+                            <a href="down/light-whitepaper.pdf" class="slide-button1" target="_blank">Light whitepaper</a> 
+					</div> 
+				</div> 
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+                        <div class="static-bnn-image move wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">                         
+                         </div><!-- card container --> 
+                        </div>                       
+                    </div> 
+			</div> 
+		</div> 
+	</div> 
+             
+<!-- WRAPPER -->    
+<div id="site-home" class="wrapper">     
+    <!-- NAVIGATION AND SLIDER HOLDER --> 
+    <section class="site-holder" role="banner"> 
+        <!-- HEADER --> 
+        <header class="site-header"> 
+            <!-- STICKY HEADER --> 
+            <div class="sticky-header" id="sticky-header"> 
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="col-xs-8 col-sm-2"> 
+                            <!-- LOGO --> 
+                            <div class="site-logo"> 
+                                <a href="#"> 
+                                    <!--<img src="images/logo-lohn.png" alt="lohn control">--> 
+                                    <span>LOHN</span>                                </a>                            </div> 
+                            <!-- END LOGO --> 
+                        </div> 
+                        <div class="col-xs-4 col-sm-10"> 
+                            <!-- NAVIGATION --> 
+                            <nav class="site-nav" id="site-nav" role="navigation"> 
+                                <div class="nav-mobile"> 
+                                    <i class="fa fa-bars show"></i> 
+                                    <i class="fa fa-close hide"></i>                                </div> 
+                                <ul class="nav-off-canvas"> 
+                                    <li><a href="index.html#about-lohn">ABOUT LOHN</a></li> 
+                                    <li><a href="index.html#whitepaper">WHITE PAPER</a></li> 
+                                    <li><a href="http://bursadelohn.ro/despre-noi?lang=en" target="_blank">MVP</a></li> 
+                                    <li><a href="index.html#lohn-team">TEAM</a></li> 
+                                    <li><a href="index.html#early-investors">EARLY INVESTORS</a></li> 
+                                    <li><a href="index.html#token-sale">TOKENS</a></li> 
+                                    <li><a href="index.html#road-map">ROADMAP</a></li> 
+                                    <li><a href="index.html#site-accordion">ASK ME</a></li>       
+                                     
+                                    <li><a href="docs/Terms-and-conditions-lohncontract.pdf" target="_blank">T&amp;Cs   </a></li>                                             
+                                           
+                                </ul> 
+                            </nav> 
+                            <!-- END NAVIGATION --> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+          
+        </header> 
+        <!-- END HEADER --> 
+    </section> 
+     
+    <!-- ABOUT Lohn  --> 
+    <section id="about-lohn" class="site-about-app left-heading section-grey">  
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-12 col-md-12"> 
+					 
+                    <div class="about-half-coll-section"> 
+    	            	<!-- H1 HEADING --> 
+	                    <h1>About Lohn</h1>     
+   		  <div class="about-half-coll-section-content"> 
+			<h2 style="text-align:left; font-size:22px;">What is lohn ?</h2> 
+                                    <p>                   
+            After World War II, human society entered a new stage of development and the appetite for consumption led to the emergence of a new industrial revolution. The profit maximization chase pushed consumer goods manufacturers to look for cheaper production options.<br /> 
+Thus, in the 60s, the outsourcing of a part of production in emerging countries that had the advantage of both cheap raw materials and low labour costs seemed the most convenient way for most big producers.<br /><br /> 
+Industries such as textiles, footwear, electronics and home appliances, machine building, wood industry through furniture production and many others have seen the huge potential of lohn industrial production. World-renowned brand owners have become engaging buyers and have provided expertise and markets while emerging country manufacturers have integrated the production of goods on demand and absorbed a huge and cheap labour force in their home countries. 
+All parties involved were winning. The brand owners had found a way to grow their profits steadily and the manufacturers had the opportunity to gain access to the rich markets and to develop their national economy. However, the advantages came with disadvantages and imbalances. The strong ones became even stronger and those who depended on them had to accept their increasingly restrictive conditions and especially the labour cost policy. 
+</p><p>&nbsp;</p> 
+<h2 style="text-align:left; font-size:22px;">Why lohncontrol.com ?</h2> 
+<p> 
+lohncontrol.com is a real business project that will build a trading platform called lohncontract.com for processing economy in over 30 industry branches. On this platform, the companies from developed economies will be the buyers and will launch production orders for various consumer goods to the production companies in emerging economies that can produce commodities at competitive prices due to the cheap labor they have and the proximity of raw materials at low prices.  
+lohncontract.com will evolve as a complex ecosystem in which besides buyers and manufacturers will be present the suppliers of raw materials, logistics, quality management, industrial process management, legal services and settlement of payments between the parties. The relationship between them will be managed in blockchain through the  lohncontrol smart contract. 
+</p> 
+<p> <strong class="highlited-text"> At present, the annual production achieved in lohn globally exceeds 10,000 B $, representing 10% of Gross Domestic Product. The target of lohncontract.com platform for next years is 0,1% from this statistic.</strong> 
+</p> 
+                             
+                            <div class="site-download-icons about-icon"> 
+                                    <a href="down/IGR-2.pdf" target="_blank" class="white-download-icons"> 
+                                        <figure><i class="fa fa-file-text"></i></figure> 
+                                        <h6>&nbsp;&nbsp; Industrial</h6> 
+                                        <h5>&nbsp;&nbsp;Global Report</h5> 
+                                    </a>    						 
+                            </div> 
+                             
+                        </div><!-- about-half-coll-section-content--> 
+                    </div> 
+               		</div>                 
+            </div><!-- row--> 
+        </div><!-- container --> 
+    </section>  
+	 <!-- lohncontrol Smart Contract --> 
+    <section id="amazing-features" class="site-amazing-features section-white hidden-xs hidden-sm"> 
+        <div class="container-fluid wide"> 
+            <div class="row"> 
+                <div class="col-xs-12"> 
+                    <!-- H1 HEADING --> 
+                    <h1 class="bluetext">How  the LOHN token price calculation algorithm works ?</h1> 
+                  <div class="row"> 
+                     
+					<p> 
+                    The use of the platform by buyers, as manufacturing order makers is conditional upon the immobilisation in a lohncontrol smart contract of a number of LOHN tokens equal to the amount that it has to pay for the placed order. This means that all the time active request value (AVR) must be covered by LOHN tokens value. If the active requests amount increases, the LOHN tokens that are in a predetermined number will have to cover this value and automatically will increase too. Because the 1B LOHN token to the $ 0.06 ITO value can only cover a $ 60M active request, any $ 60M increase in the value of active requests placed on the platform will cause a proportional increase in the token value LOHN that has to support the platform as a kind of escrow agent. This increase, proportional to the platform's use, was determined by a mathematical calculation materialized in a growth algorithm that includes multiple variables such as the availability of LOHN tokens on the free market or their liquidity. 
+                    </p> 
+       
+                             
+                       
+                        <div class="col-xs-12"> 
+                        
+     						<figure class="device wow fadeInUp" data-wow-duration="6s"> 
+                                <img src="images/lohn-principles.png" alt="How lohn it works"> 
+                            </figure> 
+                        </div> 
+                    </div><!-- row 1--> 
+                </div> 
+            </div><!-- row 2--> 
+        </div><!-- container --> 
+    </section>     
+	<!-- MORE FEATURES --> 
+    <div class="site-more-features section-blue color-gredient" id="site-more-features"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-sm-12"> 
+                    <h1>MkLV = ARV/ATxATL </h1> 
+                    <div class="col-xs-12 col-sm-12 col-md-12"> 
+                      <p>where<br> 
+                          <strong>MkLV  - Market LOHN Value</strong><strong> </strong><br> 
+                          <strong>ARV   - Active Requests Value </strong><strong> </strong><br> 
+                          <strong>AT      - Available Tokens </strong>and its represent  the difference  between CT(circulating tokens) and TUC(tokens used in contracts)<br> 
+                          <strong>AT=CT  – TUC</strong><br> 
+                          <strong>CT       - Circulating Tokens</strong><strong><br> 
+                            TUC    - Tokens Used in Contracts</strong><br> 
+  <strong>ATL    - Available Tokens Liquidity (%)</strong><br><br><br> 
+                        For example if:<br> 
+  <strong>ARV=100Millions  USD</strong><br> 
+                        AT=1Bilion LOHN tokens<br> 
+                        ATL=100%<br> 
+                        then<br> 
+  <strong>MkLV  = ARV/ATxATL</strong>=100M/1Bx100%liquidity<strong></strong><br> 
+  <strong>MkLV=0,10USD</strong><br><br><br> 
+                        Or if :<br> 
+                        <strong>ARV=150Milion USD</strong><br> 
+                        AT=800Milion LOHN tokens<br> 
+                        ATL=60%<br> 
+                        then<br> 
+  <strong>MkLV  = ARV/ATxATL</strong>=150M/800Mx60%liquidity<strong></strong><br> 
+  <strong>MkLV=0,3125USD</strong><br> 
+                        Or if :<br> 
+  <strong>ARV=300Millions  USD</strong><br> 
+                        AT    =600Millions LOHN tokens<br> 
+                        ATL =40%<br> 
+                        then<br> 
+  <strong>MkLV  = ARV/ATxATL</strong>=300M/600Mx40%liquidity<strong></strong><br> 
+  <strong>MkLV=1,25USD</strong></p> 
+                    </div> 
+                    <div class="col-xs-12 col-sm-12 col-md-12"> 
+                        <div class="heading-text"> 
+                            <p> 
+                             So, the LOHN Token price is always in direct proportion to the market volume of lohncontract.com and growth will be exponential as the project goal is reached and  ROI rate will be very high. 
+                </p> 
+                      </div> 
+                    </div> 
+            
+                </div> 
+                <div class="clearfix"></div> 
+            
+                            
+               
+        </div> 
+    </div> 
+</div> 
+     
+     
+    
+     
+    <!-- ASK ME! --> 
+    <section id="site-accordion" class="site-accordion section-grey left-heading"> 
+        <div class="container"> 
+            <div class="row"> 
+            					 
+                	<div class="accordian-main">                    	                       
+                    	<!-- accordion --> 
+                        <div class="panel-group" id="accordion"> 
+                        	<h1> Ask me!</h1> 
+                          <div class="col-xs-12 col-md-6">   
+                                
+                            <!-- section 1 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title active"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> 
+                                             What is lohn ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse1" class="panel-collapse collapse in"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         The lohn system consists of an economic business, carried out on a contractual basis, between two companies of different countries.One company performs, for a retribution in cash or in kind, a custom-made product according to the design, drawings, usually with raw materials and materials of the other company, which keep the right to trade that product under its own trademark 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+     
+                            <!-- section 2 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"  class="collapsed"> 
+                                            Where does Lohn production fit in the global economy? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse2" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                            At present, the annual production achieved in lohn globally exceeds 10,000 B $.  
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+     
+                            <!-- section 3 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed"> 
+                                            Is the processing in lohn a new trend in the world economy ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse3" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        No, the concept is 60 years old but LOHN is looking to reinvent the practice by enhancing the processes through a more secure system 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+     
+                            <!-- section 4 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed"> 
+                                            How LOHN works ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse4" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                            LOHN Token is an ERC20 digital cryptographic utility token issued by Lohn 
+ecosystem, using blockchain that gives access to our token holders to make  profit on lohncontract.com trading platform. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 5 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed"> 
+                                            What is your target ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse5" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                           Our target is to empower businesses spread all over the world by connecting them through a secure network of factories and suppliers. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 6 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed"> 
+                                           What are the  functions of your platform? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse6" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         The main function of the LOHN ecosystem is to provide a convenient and secure environment for factories. The lohncontrol platform is the virtual place where global factories interact with each other through the blockchain, with the help of smart contracts.   
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 7 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed"> 
+                                           How is LOHN different from other blockchain projects of manufacturing ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse7" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                            LOHN is not only about manufacturing industries but is designed to manage industrial production processes in any industrial branch.                                             
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 8 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed"> 
+                                          What is the connection between lohncontrol.com and lohncontract.com ?  
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse8" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         The lohncontrol.com project is developed in Ethereum blockchain and is designed to efficiently manage trading processes on the regional platforms of lohncontract.com.<br /> The mechanisms managed by the blockchain technology of the lohncontrol.com project have a significant role to give mutual trust to all the parties involved in a lohn contract. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 9 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed"> 
+                                           What  problems is LOHN solving ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse9" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                            Trust problems between the parties of the lohn contract and the traceability of the product. LOHN will also help to eradicate the practice of work without legal employment forms or   
+                                            exploitation of vulnerable people and children in emerging economies. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                             
+                             <!-- section 10 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="collapsed"> 
+                                          What is your model based on? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse10" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                       <strong class="highlited-text"> We are using a range of:</strong><br /> 
+1. Ethereum platform for smart contracts.<br /> 
+2. Innovative  solution for higher transaction speed recording and the low  costs of transactions. <br /> 
+3. IPFS  databases for data recording and storage.<br /> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div>			 
+                        
+                             
+                            </div><!-- col md-6 end --> 
+                             
+                            <div class="col-xs-12 col-md-6">   
+                             
+                            
+                                 <!-- section 11 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="collapsed"> 
+                                           Does LOHN operate globally? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse11" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        <strong class="highlited-text">Yes, the platform will be available to clients around the world.</strong><br /> 
+At the moment we are already  operating our first platform in Eastern Europe (bursadelohn.ro). It is better than an MVP because is completely functional.  
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                             
+                            <!-- section 12 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="collapsed"> 
+                                          Why do I need blockchain and smart contracts? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse12" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         Blockchain and smart contracts will allow us to minimize operational costs, financial inefficiencies and manual administration, bad trade execution or conflict resolution.<br /> 
+These technologies allow to create platforms and ecosystems with built in trust characteristics which, in traditional economy, are typically achieved by using laborious and inefficient processes for document exchange, recording, auditing, bookkeeping and reconciliation.  Smart contract technologies are capable of eliminating these frictions and therefore have potential to eliminate associated unjustified cost. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            	<!-- section 13 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13" class="collapsed"> 
+                                          What "WE DON'T TOUCH THE MONEY" philosophy means? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse13" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        Settlement of payments between parties is done without our intervention.  
+                                        <br />Bank operations are running now through escrow accounts. 
+                                        We also look for the latest payment solutions developed in the blockchain that can be integrated into the smart lohncontrol contract. 
+                                        There are many regional and global payment solutions suitable with our vision of developing partnerships. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 14 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14" class="collapsed"> 
+                                          How do you plan to develop your product? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse14" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        We will develop the LOHN project in accordance with our roadmap. 
+                                        The team members are skilled people covering various areas of the project such as logistics, legal, product quality control, payment process.                                         
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 15 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15" class="collapsed"> 
+                                           What is bursadelohn.ro ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse15" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         It's a regional  hub for the processing economy. It's our working platform also our MVP (minimum viable product) and is the first operational trading platform which precedes lohncontract.com. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 16 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse16" class="collapsed"> 
+                                          What is LOHN FOUNDATION ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse16" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         <strong class="highlited-text">LOHN FOUNDATION</strong>  is the founder's dream for building a creative sharing economy network for the benefit of all lohn contract parties. 
+                                         LOHN FOUNDATION aims to actively support the development of professional education throughout the world, to provide training to specialists from emerging economies, to contribute to the harmonization of international legislation on processing economy in lohn. 
+It aims to help local authorities in disadvantaged areas of the world by supporting initiatives aimed at creating jobs for local communities.          
+LOHN FOUNDATION aims to establish traceability of the labor force employed in emerging economies to prevent human exploitation by unregistered tax work, through excessive work or child involvement in industrial goods manufacturing processes. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 17 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse17" class="collapsed"> 
+                                          When will investors get a profit? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse17" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         Investors will be able to sell after the launching our ITO or keep the tokens and collect the growth. 
+                                      
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 18 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse18" class="collapsed"> 
+                                          How many tokens will be issued and how many of them are to be sold? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse18" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        We’ll generate 1.000.000.000 utility tokens for sale, platform operating, team, development  and LOHN FOUNDATION. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 19 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse19" class="collapsed"> 
+                                          What happens with unsold LOHN tokens? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse19" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                      Unsold tokens will be distributed pro rata to ITO token holders. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 20 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse20" class="collapsed"> 
+                                           How do I buy tokens? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse20" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         <ul> 
+                                          <li>You will need an Ethereum wallet. </li> 
+                                          <li>Apply for KYC ( Know Your Customer ) and get the approval if you are an early investor.</li> 
+                                          <li>If you are successfully verified with KYC program our team will reach  you via email.</li> 
+                                          <li>Transfer ETH&nbsp;to a given wallet address.</li> 
+                                          <li>Get tokens.</li> 
+                                        </ul> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 21 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse21" class="collapsed"> 
+                                          What payment methods are accepted in the ITO? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse21" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                        	<strong class="highlited-text"> ETH.</strong> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 22 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse22" class="collapsed"> 
+                                           When do you expect to bring tokens to the market ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse22" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         We are planning to make agreements with at least 5 exchange markets from the top. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             
+                            <!-- section 23  
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse23" class="collapsed"> 
+                                           Do you have a Bounty program? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse23" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                                         Yes, there will be 10 millions LOHN tokens for our project ambassadors !  
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        end --> 
+                              
+                             <!-- section 24 --> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse24" class="collapsed"> 
+                                          What is LOHN STOCK? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse24" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                The reserve required to ensure the operation of the platform. Locked in smart contract with sale restrictions. 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             <!-- end -->   
+                              
+                              
+                              
+                              <!-- section 25--> 
+                            <div class="panel panel-default"> 
+                                <div class="panel-heading"> 
+                                    <h4 class="panel-title"> 
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse25" class="collapsed"> 
+                                          How the LOHN token price calculation algorithm works ? 
+                                            <span>icon</span> 
+                                        </a> 
+                                    </h4> 
+                                </div> 
+                                <div id="collapse25" class="panel-collapse collapse"> 
+                                    <div class="panel-body-container"> 
+                                        <div class="panel-body"> 
+                								<b>MkLV = ARV/ATxATL <br /> 
+                                                AT=CT - TUC</b><br /><br /> 
+                                                
+                                                 MkLV - market LOHN value<br /> 
+                                                 ARV - active requests value<br /> 
+                                                 CT - circulating tokens<br /> 
+                                                 AT - available tokens<br /> 
+                                                 TUC - tokens used in contracts<br /> 
+                                                 ATL - available tokens liquidity<br /> 
+                                                The obligation to hold LOHN tokens for the use of the platform creates a  
+                                                relationship of interdependence between the value of all active bid requests  
+                                                and the token market price. At ITO price of $ 0.06USD / LOHN, all 1B LOHN  
+                                                tokens in circulation cover 60M USD queries. This means that an influx of  
+                                                supply over this value leads to an increase in the token market price. Thus, at a  
+                                                value of $ 200M, for example, requests posted on the LOHN token will have to  
+                                                cost $ 0.20 to support the platform. At $ 500M, the token will cost $ 0.50. 
+                                                </p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                             <!-- end -->                       	 
+<br /><br /> 
+                            </div><!-- second col-md-6 end -->      
+							 
+                            <h2 class="subtitle"> Be our partner, feel the value!</h2> 
+                        </div> 
+                        
+					</div> 
+                </div> 
+                 
+                 
+            </div> 
+  
+    </section>   
+     
+     
+    <section class="site-quick-view section-grey" id="lohn-comercial-partners"> 
+        <div class="container-fluid wide"> 
+            <div class="row"> 
+                <div class="col-sm-12">             
+                    <h1 class="smallfont">We are looking for the best partners !</h1>               
+      <div class="container"> 
+                        		<div class="row">  
+                                        <div class="col-md-2">  
+                                            <a href="https://www.bitwala.com" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/bitwala.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                          
+                                        <div class="col-md-2"> 
+                                            <a href="https://www.statista.com/" class="box" rel="nofollow" target="_blank"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/statista.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                           
+                                        <div class="col-md-2"> 
+                                            <a href="https://www.ibisworld.com/industry-trends/global-industry-reports/manufacturing/" class="box" rel="nofollow" target="_blank"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/ibis.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                
+                                        <div class="col-md-2">  
+                                            <a href="https://www.waltonchain.org/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/waltonchain.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                        
+									 
+                                        <div class="col-md-2">  
+                                            <a href="https://origintrail.io/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/origintrail.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>   
+                                     
+                                        <div class="col-md-2">   
+                                            <a href="https://ambrosus.com/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/ambrosus.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                                                                
+                                         
+                                        <div class="col-md-2">     
+                                            <a href="https://www.vechain.com" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/vechain.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                         
+                                        <div class="col-md-2">    
+                                            <a href="https://wacoin.io/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/wabi.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>                                            
+                                         
+                                        <div class="col-md-2">    
+                                            <a href="https://ost.com/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/ost.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>    
+                                         
+                                        <div class="col-md-2">    
+                                            <a href="https://www.mistertango.com" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/mistertango.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div>    
+                                         
+                                        <div class="col-md-2">    
+                                            <a href="https://www.solarisbank.com/en/" class="box" target="_blank" rel="nofollow"> 
+                                                <figure> 
+                                                    <img src="images/comercialpartners/solarisbank.jpg" alt="partner"> 
+                                                </figure> 
+                                            </a> 
+                                        </div> 
+                                         
+                                         
+                                                                              
+                               </div>   
+                        </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section>     
+   
+     
+   
+    <!-- QUICK CONTACT --> 
+    <section id="quick-support" class="site-quick-support section-white"> 
+        <div class="container"> 
+            <div class="contact-box color-gredient"> 
+                <div class="col-xs-12"> 
+					<div class="box"> 
+                    <!-- INFO --> 
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"> 
+	                    <div class="site-info"> 
+                        <h5>&nbsp; </h5> 
+                        <h5> Contact Info</h5> 
+<h5 class="hidden-xs">&nbsp; </h5> 
+<h5 class="hidden-xs">&nbsp; </h5> 
+<h5>&nbsp; </h5> 
+                    </div> 
+                    </div> 
+                    <!-- CONTACT FORM --> 
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"> 
+                    	<div class="site-info form"> 
+							 <h5 class="hidden-xs">&nbsp; </h5> 
+	                    	 <a href="mailto:office@lohncontrol.com" class="site-box-row last"> 
+                             
+                            <h6><i class="fa fa-envelope"></i> Email us</h6> 
+                            <p>office@lohncontrol.com</p> 
+                        </a> 
+                         
+                       <!-- <a href="http://maps.google.com" target="_blank"  class="site-box-row"> 
+                            <h6><i class="fa fa-map-marker"></i> Adress</h6> 
+                          <address>P.O. 301, Sydney 30981, Australia</address> 
+                        </a>--> 
+                    	</div> 
+                    </div> 
+                </div> 
+            </div> 
+            </div> 
+        </div> 
+    </section> 
+    <!-- FOOTER --> 
+    <footer class="site-footer section-blue"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-xs-12">    
+                <div class="site-social-icons"> 
+                <ul > 
+                	 
+                    
+                    <li data-animation="animated bounceInDown" class="slider_social_icon1"> 
+                    	<a href="https://t.me/lohncontrol" target="_blank" class="ssmsoc"> 
+                        <span>Lohncontrol Telegram</span> 
+                        <i class="fa fa-send-o"></i></a> 
+                    </li> 
+                     
+                    <li data-animation="animated bounceInDown" class="slider_social_icon2"> 
+                    	<a href="https://www.linkedin.com/showcase/lohncontrol" target="_blank" class="ssmsoc"> 
+                        <span>Lohncontrol LinkedIn</span>                         
+                        <i class="fa fa-linkedin"></i></a> 
+                    </li> 
+                    <li data-animation="animated bounceInDown" class="slider_social_icon3"> 
+                    	<a href="https://twitter.com/LOHN09047729" target="_blank"class="ssmsoc"> 
+                        <span>Lohncontrol Twitter</span> 
+                        <i class="fa fa-twitter"></i></a> 
+                    </li> 
+                    <li data-animation="animated bounceInDown" class="slider_social_icon4"> 
+                    	<a href="https://www.reddit.com/user/lohncontrol" target="_blank"class="ssmsoc"> 
+                        <span>Lohncontrol Reddit</span> 
+                        <i class="fa fa-reddit"></i></a> 
+                    </li> 
+                    <li data-animation="animated bounceInDown" class="slider_social_icon5"> 
+                    	<a href="https://www.facebook.com/Lohncontrol-333404420657940/" target="_blank"class="ssmsoc"> 
+                        <span>Lohncontrol Facebook</span> 
+                        <i class="fa fa-facebook"></i></a> 
+                    </li> 
+                    <li data-animation="animated bounceInDown" class="slider_social_icon6"> 
+                    <a href="https://bitcointalk.org/" target="_blank"class="ssmsoc"> 
+                        <span>Lohncontrol Bitcointalk</span> 
+                        <i class="fa fa-bitcoin"></i></a> 
+                    </li> 
+                     
+                     
+                    <li data-animation="animated bounceInDown" class="slider_social_icon7"> 
+                    <a href="https://medium.com/@lohncontrol" target="_blank"class="ssmsoc"> 
+                        <span>Lohncontrol Medium</span> 
+                        <i class="fa fa-medium"></i></a> 
+                    </li> 
+                 
+                 </ul> 
+                    </div> 
+                    <div class="site-copyright"> 
+                        <p>&copy; Copyright 2019 LOHN Control </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+</div> 
+<!-- END WRAPPER --> 
+<script src="js/jquery-1.12.4.min.js"></script> 
+<script  src="js/timeline.js"></script>                                 <!-- timeline --> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>            <!-- beeping dots --> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script> <!-- particles circles --> 
+<!--<script src="js/loadingoverlay.min.js"></script>                        Preloader -->      
+<script src="js/swiper.jquery.min.js"></script>                         <!-- Carousel slider --> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>        <!-- Custom scroll bar --> 
+<script src="js/modernizr-custom.min.js"></script>                      <!-- Modernizr --> 
+<script src="js/sequence.min.js"></script>                              <!-- Header Slider --> 
+<script src="js/jquery.countimator.min.js"></script>                    <!-- Counter --> 
+<script src="js/bootstrap.min.js"></script>                             <!-- Bootstrap --> 
+<script src="js/jquery.sticky.min.js"></script>                         <!-- Sticky Header --> 
+<script src="js/jquery.scrollUp.min.js"></script>                       <!-- scroll top --> 
+<script src="js/style.js"></script>                                     <!-- All Template Options --> 
+<script src="js/wow.min.js"></script>									<!-- Wow animation js --> 
+<script  src="js/canss.js"></script>                                    <!-- particles circles --> 
+<script type="text/javascript">  
+ 	setTimeout(function () {    
+         $("#inf").removeClass("displaynone");  
+		 $("#outf").addClass("displaynone");  
+		 $("#inf").addClass("img-responsive");  
+	}, 3400); 
+</script> 
+<script  src="js/lohn.js"></script>  
+</body> 
+</html>
