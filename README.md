@@ -40,8 +40,13 @@ ATL    - Available Tokens Liquidity (%)
 
 For example if:
 ARV=100Millions USD
+
 AT=1Bilion LOHN tokens
+
 ATL=100%
+
 then
+
 MkLV = ARV/ATxATL=100M/1Bx100%liquidity
+
 MkLV=0,10USD
