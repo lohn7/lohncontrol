@@ -1,6 +1,15 @@
 # lohncontrol
 The processing economy without trust problems
+----------------------------------------------------
 
+About Lohncontrol
+
+The platform will be a dynamic, complex ecosystem that will integrate all parties involved into a lohn contract and their relationships will be managed independently in the blockchain through the lohncontrol Smart Contract that will release the payments due to each one to fulfill the tasks initially allocated.
+          The main actors of this ecosystem will be buyers from developed economies who want to produce quality and cheap goods and manufacturers from developing economies interested in these orders. The relationship between them will be possible with the participation of some directly involved actors such as transport companies, connected logistics, warehouses, then quality control experts who are engaged in industrial production processes and finally the providers of payment solutions within the smart the contract, which closes the economic circuit.
+           Equally important in the performance of the lohn contract but with indirect involvement in the smart contract are the secondary actors in the second series, namely raw material suppliers, internal suppliers, utilities suppliers and then framework providers for software infrastructure, financial risk management, data providers, financial risk insurance, legal services.
+           In the production process management area, industrial process engineers, industry specialists, development partners will be involved, and the ecosystem will mobilize financial institutions: clearing houses, friendly banks, escrow partners, funding solutions, blockchain accounts on the settlement area.
+            The blockchain architecture of the lohncontract.com ecosystem is designed to provide psychological comfort to all parties involved who will know that the payment for the services provided or the goods delivered under the lohn contract will be made independently by the smart contract at the time of the assumed tasks.
+          The blockchain thus introduces a trustworthy protocol without which firms located in different parts of the world, from different economic cultures, would not be able to interact or would do so and would incur high financial risks.  
 
 
 How does a lohn contract work in blockchain ?
