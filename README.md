@@ -1,16 +1,6 @@
 # lohncontrol
 The processing economy without trust problems
 
-
-          The platform will be a dynamic, complex ecosystem that will integrate all parties involved into a lohn contract and their relationships will be managed independently in the blockchain through the lohncontrol Smart Contract that will release the payments due to each one to fulfill the tasks initially allocated.
-          The main actors of this ecosystem will be buyers from developed economies who want to produce quality and cheap goods and manufacturers from developing economies interested in these orders. The relationship between them will be possible with the participation of some directly involved actors such as transport companies, connected logistics, warehouses, then quality control experts who are engaged in industrial production processes and finally the providers of payment solutions within the smart the contract, which closes the economic circuit.
-           Equally important in the performance of the lohn contract but with indirect involvement in the smart contract are the secondary actors in the second series, namely raw material suppliers, internal suppliers, utilities suppliers and then framework providers for software infrastructure, financial risk management, data providers, financial risk insurance, legal services.
-           In the production process management area, industrial process engineers, industry specialists, development partners will be involved, and the ecosystem will mobilize financial institutions: clearing houses, friendly banks, escrow partners, funding solutions, blockchain accounts on the settlement area.
-            The blockchain architecture of the lohncontract.com ecosystem is designed to provide psychological comfort to all parties involved who will know that the payment for the services provided or the goods delivered under the lohn contract will be made independently by the smart contract at the time of the assumed tasks.
-          The blockchain thus introduces a trustworthy protocol without which firms located in different parts of the world, from different economic cultures, would not be able to interact or would do so and would incur high financial risks.  
-
-
-
 How does a lohn contract work in blockchain ?
 
 The contract between the buyer and the producer also involves third entities that lead to the completion in good conditions thereof. These are the carriers who deliver the raw materials and other goods required to achieve the production in the first phase, and then they pick up the finished products to deliver  them  to  the  buyer.  Domestic  suppliers  of  raw  materials,  related services and utilities represent another important category for the success of the production. Above all there are the quality control experts natural or legal persons, who follow on behalf of the buyer the entire production process, from the delivery of the raw materials, the quality thereof, supply or delivery times, the quality of the goods or services provided by the domestic supplier, the timeliness of the deliveries or of the transportation of the goods and, in particular, the proper execution of the production by observing the buyer's technological indications.
